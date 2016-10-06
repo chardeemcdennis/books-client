@@ -5,10 +5,6 @@ const getFormFields = require('../../../lib/get-form-fields');
 const api = require('./api');
 const ui = require('./ui');
 
-const onSignUpClick = function () {
-  ui.showSignUpModal();
-};
-
 const onSignUp = function (event) {
   event.preventDefault();
   let data = getFormFields(event.target);
@@ -29,7 +25,6 @@ const onSignIn = function (event) {
 
 
 const addHandlers = function() {
-  $('#sign-up-link').on('click', onSignUpClick);
   $('#sign-up').on('submit', onSignUp);
   $('#sign-in').on('submit', onSignIn);
 };

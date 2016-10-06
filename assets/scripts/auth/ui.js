@@ -21,13 +21,14 @@ const signInSuccess = (data) => {
   $('#get-books').show();
 };
 
-const signInFailure = (error) => {
-  return error;
-};
+// const signInFailure = (error) => {
+//   return error;
+// };
+
 
 module.exports = {
   signUpSuccess,
   signUpFailure,
   signInSuccess,
-  signInFailure
+  // signInFailure,
 };
